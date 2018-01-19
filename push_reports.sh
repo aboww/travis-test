@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 git init travis-reports
 cd travis-reports/
-git remote add origin https://804c84ebd02ddfb3ec2bd2c79ac3b89e89c728d1@github.com/aboww/aboww.github.io.git
+git remote add origin https://21ae5c095242e92309feec331b8762dc980d36cf@github.com/aboww/aboww.github.io.git
 git pull --depth=1 origin master
 cp ../target/site -r ./
 git add -A
