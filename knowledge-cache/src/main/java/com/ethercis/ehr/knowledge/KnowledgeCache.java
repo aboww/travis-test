@@ -325,6 +325,8 @@ public class KnowledgeCache implements I_KnowledgeCache {
         try {
             addKnowledgeSourcePath(archetypePath, KnowledgeType.ARCHETYPE);
         } catch (Exception e) {
+            System.out.println("COULD NOT LOAD ARCHETYPE PATH. EXCEPTION DETAILS:");
+            e.printStackTrace();
             throw new IllegalArgumentException("Could not load archetype path...");
         }
 
